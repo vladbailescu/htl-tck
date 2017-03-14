@@ -100,14 +100,30 @@ public class HTMLExtractor {
                     String value = elements.attr(attributeName);
                     return attributeValue.equals(value);
                 }
-                return true;
-            } else {
                 return elements.hasAttr(attributeName);
+            } else {
+                return !elements.hasAttr(attributeName);
             }
         }
         return false;
     }
 
+
+    //        if (elements.size() > 0) {
+//            if (exists) {
+//                if (!elements.hasAttr(attributeName)) {
+//                    return false;
+//                }
+//                String value = elements.attr(attributeName);
+//                if (attributeValue == null) {
+//                    return StringUtils.isEmpty(value);
+//                } else {
+//                    return attributeValue.equals(value);
+//                }
+//            } else {
+//                return !elements.hasAttr(attributeName);
+//            }
+//        }
     /**
      * Checks if the element matched by the {@code selector} has children and if their number is equal to {@code howMany}.
      *

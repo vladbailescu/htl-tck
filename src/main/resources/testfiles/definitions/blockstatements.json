@@ -539,6 +539,16 @@
                     "attribute": "data-seed-slider",
                     "value": "false"
                 },
+                {
+                    "selector": "#attr18",
+                    "attribute": "title",
+                    "value": ""
+                },
+                {
+                    "selector": "#attr19",
+                    "attribute": "title",
+                    "value": ""
+                },
 
                 {
                     "selector": "#rogue-attributes",

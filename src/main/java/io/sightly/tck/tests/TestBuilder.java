@@ -187,7 +187,7 @@ public class TestBuilder {
                     } else {
                         assertFalse(String.format("Did not expect to find attribute '%s' on element matching selector '%s'. Please check " +
                                         "the expected markup from %s.", attributeName, selector, expectedMarkupPath),
-                                HTMLExtractor.hasAttribute(url, output, selector, exists, attributeName, attributeValue));
+                                HTMLExtractor.hasAttribute(url, output, selector, !exists, attributeName, attributeValue));
                     }
                 } else if ("hasChildren".equals(overriddenMethod)) {
                     assertTrue(String.format("Expected to find an element matching selector '%s'. Please check the expected markup " +
